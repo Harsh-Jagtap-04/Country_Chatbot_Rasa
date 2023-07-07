@@ -1,0 +1,54 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- country_info
+- goodbye
+- greet
+- max_surface_area
+- min_surface_area
+- search_Local_Name
+- search_Region
+- search_population
+- search_surface_area
+
+entities:
+- country
+
+slots:
+  country:
+    type: text
+    influence_conversation: true
+
+responses:
+
+  utter_goodbye:
+  - text: bye
+
+  utter_ask_more:
+  - buttons:
+    - payload: I want to know about Region of {country} ?
+      title: Do you want to know Region of {country}
+    - payload: I want to know about Local Name of {country} ?
+      title: Do you want to know Local Name of {country}
+    text: Do you need any more information ?
+
+  utter_ask_more_surface_area:
+  - buttons:
+    - payload: Which country has maximum surface area ?
+      title: country with largest surface area
+    - payload: Which country has minimum surface area ?
+      title: country with smallest surface area
+    text: Do you want to know more ?
+
+actions:
+- action_get_country_info
+- action_get_local_name
+- action_get_max_surface_area
+- action_get_min_surface_area
+- action_get_population
+- action_get_region
+- action_get_surface_area
+- action_greet

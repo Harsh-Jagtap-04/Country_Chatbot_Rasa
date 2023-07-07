@@ -1,0 +1,132 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hii
+- intent: search_population
+  examples: |
+    - What is the population of [France](country)?
+    - What is the population of [Kabul](country)?
+    - What is the population of [Mostaganem](country)?
+    - What is the population of [India](country)?
+    - What is the population of [Iceland](country)?
+    - How many people live in [Japan](country)?
+    - How many people live in [Sri Lanka](country)?
+    - How many people live in [Mexico](country)?
+    - How many people live in [New Zealand](country)?
+    - How many people live in [Pakistan](country)?
+    - How many people live in [Saint Kitts and Nevis](country)?
+    - Can you tell me the population of [Turkey](country)?
+    - Can you tell me the population of [Brazil](country)?
+    - Can you tell me the population of [South Africa](country)?
+    - Can you tell me the population of [Zimbabwe](country)?
+    - Can you tell me the population of [Saint Lucia](country)?
+    - tell me population of [india](country)
+    - tell me population of [Afghanistan](country)
+- intent: country_info
+  examples: |
+    - can you tell me about [France](country)
+    - can you tell me about [South Africa](country)
+    - what do you know about [India](country)
+    - what do you know about [Zimbabwe](country)
+    - give me some information about [Sri Lanka](country)
+    - give me some information about [Pakistan](country)
+    - what can you tell me about [Brazil](country)
+    - what can you tell me about [Iceland](country)
+    - i want to know about [Saint Lucia](country)
+    - i want to know about [Mexico](country)
+    - can you provide details about [Turkey](country)
+    - can you provide details about [Saint Kitts and Nevis](country)
+    - Can you tell me about [India](country)?
+    - I want to learn more about [Brazil](country)
+    - What can you tell me about [Japan](country)?
+    - [France](country), tell me more about it
+    - What is [Mexico](country) known for?
+    - Information on [Russia](country)
+    - [Spain](country) - what are some interesting facts about it?
+    - information on [Monaco](country)
+    - information on [Greece](country)
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: search_Local_Name
+  examples: |
+    - What is the loacl name of [France](country)?
+    - What is the Local Name of [Kabul](country)?
+    - What is the local name of [Mostaganem](country)?
+    - What is the locale name of [India](country)?
+    - What is the loacl name of [Iceland](country)?
+    - Can you tell me the local name of [Turkey](country)?
+    - Can you tell me the local name of [Brazil](country)?
+    - Can you tell me the Local Name of [South Africa](country)?
+    - Can you tell me the Local Name of [Zimbabwe](country)?
+    - Can you tell me the Local Name of [Saint Lucia](country)?
+    - I want to know local name of [France](country)?
+    - I want to know the Local Name of [Kabul](country)?
+- intent: search_Region
+  examples: |
+    - What is the Region of [France](country)?
+    - What is the region of [Kabul](country)?
+    - What is the Region of [Mostaganem](country)?
+    - What is the Region of [India](country)?
+    - What is the region of [Iceland](country)?
+    - Can you tell me the region of [Turkey](country)?
+    - Can you tell me the region of [Brazil](country)?
+    - Can you tell me the region of [South Africa](country)?
+    - Can you tell me the region of [Zimbabwe](country)?
+    - Can you tell me the region of [Saint Lucia](country)?
+    - I want to know region of [France](country)?
+    - I want to know the region of [Kabul](country)?
+- intent: max_surface_area
+  examples: |
+    - What is the maximum surface area ?
+    - Can you tell me the maximum surface area ?
+    - Which country has maximum surface area ?
+    - I want to know the maximum surface area
+    - What is the largest country in the world in terms of surface area?
+    - Which country has the largest surface area?
+- intent: min_surface_area
+  examples: |
+    - What is the minimum surface area ?
+    - Can you tell me the minimum surface area ?
+    - Which country has minimum surface area ?
+    - I want to know the minimum surface area
+    - What is the smallest country in the world in terms of surface area?
+    - Which country has the smallest surface area?
+- intent: search_surface_area
+  examples: |
+    - What is the surface area of [France](country)?
+    - What is the surface area of [Kabul](country)?
+    - What is the surface area of [Mostaganem](country)?
+    - What is the surface area of [India](country)?
+    - What is the surface area of [Iceland](country)?
+    - Can you tell me the surface area of [Turkey](country)?
+    - Can you tell me the surface area of [Brazil](country)?
+    - Can you tell me the surface area of [South Africa](country)?
+    - Can you tell me the surface area of [Zimbabwe](country)?
+    - Can you tell me the surface area of [Saint Lucia](country)?
+    - I want to know surface area of [France](country)?
+    - I want to know the surface area of [Kabul](country)?

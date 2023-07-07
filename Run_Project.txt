@@ -1,0 +1,5 @@
+run actions: rasa run actions -vv
+run browser: rasa run -m models --enable-api --cors "*" -p 5021
+
+rasa shell
+rasa interactive

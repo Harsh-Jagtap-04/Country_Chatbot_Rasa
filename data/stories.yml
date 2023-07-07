@@ -1,0 +1,108 @@
+version: "2.0"
+
+stories:
+
+  - story: greet and search population
+    steps:
+    - intent: greet
+    - action: action_greet
+    - intent: search_population
+    - slot_was_set:
+      - country: "India"
+    - action: action_get_population
+    - action: utter_ask_more
+
+  # Ask for a country and retrieve population data
+  - story: search population
+    steps:
+    - intent: search_population
+    - slot_was_set:
+      - country: "Brazil"
+    - action: action_get_population
+    - action: utter_ask_more
+    
+  # greet and get country data
+
+  - story: greet and search country
+    steps:
+    - intent: greet
+    - action: action_greet
+    - intent: country_info
+    - slot_was_set:
+      - country: "India"
+    - action: action_get_country_info
+    - intent: goodbye
+    - action: utter_goodbye
+
+  # Ask for a country data
+  - story: search country
+    steps:
+    - intent: country_info
+    - slot_was_set:
+      - country: "Brazil"
+    - action: action_get_country_info
+
+  # Ask for a country and retrieve Region
+  - story: search region
+    steps:
+    - intent: search_Region
+    - slot_was_set:
+      - country: "Brazil"
+    - action: action_get_region
+
+  # Ask for a country and retrieve Region
+  - story: search local name
+    steps:
+    - intent: search_Local_Name
+    - slot_was_set:
+      - country: "Brazil"
+    - action: action_get_local_name
+
+  # max surface area 
+  - story: greet and search maximum surface area
+    steps:
+    - intent: greet
+    - action: action_greet
+    - intent: max_surface_area
+    - action: action_get_max_surface_area
+
+  # max surface area
+  - story: search max surface area
+    steps:
+    - intent: max_surface_area
+    - action: action_get_max_surface_area
+
+  # min surface area
+  - story: greet and search minimum surface area
+    steps:
+    - intent: greet
+    - action: action_greet
+    - intent: min_surface_area
+    - action: action_get_min_surface_area
+
+  # min surface area
+  - story: search max surface area
+    steps:
+    - intent: min_surface_area
+    - action: action_get_min_surface_area
+
+  # surface area 
+  - story: greet and search surface area
+    steps:
+    - intent: greet
+    - action: action_greet
+    - intent: search_surface_area
+    - slot_was_set:
+      - country: "India"
+    - action: action_get_surface_area
+    - action: utter_ask_more_surface_area
+
+  # Ask for a country and retrieve population data
+  - story: search population
+    steps:
+    - intent: search_surface_area
+    - slot_was_set:
+      - country: "Brazil"
+    - action: action_get_surface_area
+    - action: utter_ask_more_surface_area
+

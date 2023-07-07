@@ -1,0 +1,18 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Ask about more info when asked population
+  steps:
+  - action: action_get_population
+  - action: utter_ask_more
+
+- rule: Ask about more info when asked surface area
+  steps:
+  - action: action_get_surface_area
+  - action: utter_ask_more_surface_area
